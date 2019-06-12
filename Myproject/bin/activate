@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/waldir/Desktop/Apreendendo_site/Myproject"
+VIRTUAL_ENV="/home/waldir/Desktop/siteApreendendo/Myproject"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
