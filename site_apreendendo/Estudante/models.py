@@ -1,9 +1,8 @@
 from django.db import models
 
-class Person(models.Model):
+class Estudante(models.Model):
     nome = models.CharField(max_length=50)
     sobreNome = models.CharField(max_length=50)
-    fomacao = models.CharField(max_length=100)
     idade = models.IntegerField()
     telefone = models.IntegerField()
     email = models.EmailField(max_length=200)
