@@ -8,26 +8,20 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link rel="stylesheet" href="{% static 'styles.css' %}">
-
-    <title>Inscrição de estudante</title>
+    <link rel="stylesheet" href="{% estaticos 'styles.css' %}">
+    <title>Cadastro de estudante</title>
 </head>
-
 <body>
 
-    <div class="content">
-
-      <!--FORMULÁRIO DE CADASTRO-->
       <div id="cadastro">
-        <form method="post" action="">
+        <form method="POST" action="">
 
-            <h1 class="link">Fixa de inscrição do projeto</h1>
+            <h1>Fixa de inscrição do projeto</h1>
 
             <p>
-              <label for="nome_cad">Nome</label>
-              <br>
-              <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Luiz" />
+                <label for="nome_cad">Nome</label>
+                <br>
+                <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Luiz"/>
 
                 <p>
                 <label for="sobrenome_cad">Sobrenome</label>
@@ -68,20 +62,18 @@
                 <p>
                     <label for="email_cad">E-mail</label>
                     <br>
-                    <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@htmlecsspro.com"/>
+                     <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@htmlecsspro.com"/>
                 </p>
 
             </p>
 
-
-          <p>
-            <input type="submit" value="Cadastrar"/>
-          </p>
+            <p>
+                <input type="submit" value="Cadastrar"/>
+            </p>
 
         </form>
-      </div>
-    </div>
-  </div>
-</body>
 
+    </div>
+
+</body>
 </html>
