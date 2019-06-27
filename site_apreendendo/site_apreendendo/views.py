@@ -1,6 +1,5 @@
-from django.http import HttpResponse
 from django.shortcuts import render
 
-def paginaMain(request):
-    return HttpResponse("Estou tentando novamente...")
 
+def home(request):
+    return render(request, "Home/home.html")
