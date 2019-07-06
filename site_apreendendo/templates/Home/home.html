@@ -1,15 +1,49 @@
+{% load static %}
+
 <!doctype html>
+
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'CSS/styles_home.css' %}">
     <title>home</title>
 </head>
 <body>
+    <header>
+        <div class="conteiner">
+            <div id="div_logo">
+                <img src="Imagem/IMG-20190318-WA0035.jpg" height="90px">
+            </div>
+            <div id="div_menu">
+                <a href="#">Home</a>
+                <a href="#">Quem somos</a>
+                <a href="#">Serviços</a>
+                <a href="#">Fale com conosco</a>
+                <a href="{% url 'cadastro' %}">Novo cliente</a>
+            </div>
 
-    <a href="{% url 'cadastro' %}">Novo cliente</a>
+        </div>
+    </header>
+
+    <div>
+        <div id="div_principal" class="conteiner">
+            <div class="efeito">
+                <h1>Seja bem vindo a meu primeiro projeto</h1>
+                <p>A Culpa É Nossa A culpa é nossa Você é culpada tanto quanto eu A gente perdeu tempo quando se perdeu Agora sofre e chora o leite derramado A culpa é nossa Por matar os sonhos sem fazer enterro O arrependimento não conserta o erro Na contramão
+                    da vida, cada um pra um lado Eu apenas compro a pena que não vale a pena No filme da cabeça se repete a cena Não era o fim de tudo e tudo teve fim Você embora me levou depois que foi embora Garante que não sofre jura que não chora
+                    Mas nunca mais sorriu como sorriu pra mim Longe um do outro Assunto a gente encontra pra fugir do assunto Junto a gente sofre por não ficar junto Na crença desse amor viramos dois ateus Longe um do outro O choque da distância estar
+                    pior que o choque No primeiro passo ao derradeiro toque Perdemos Deus na hora, na hora do adeus Eu apenas compro a pena que não vale a pena No filme da cabeça se repete a cena Não era o fim de tudo e tudo teve fim Você embora me levou
+                    depois que foi embora Garante que não sofre jura que não chora Mas nunca mais sorriu como sorriu pra mim
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+    <footer>Estou testando tudo</footer>
 
 </body>
 </html>

@@ -1,0 +1,128 @@
+/*Meu primeiro arquivo css*/
+
+
+/*TAGs*/
+
+p {
+    color: rgb(255, 0, 0);
+    /*muda a cor do texto da tag p*/
+    font-size: 15px;
+    /*muda o tamanho da fonte do texto*/
+    font-family: Helvetica, sans-serif;
+    /*muda o estilo da fonte da letra*/
+    /*background-color: aqua; --> Apenas muda a cor do fundo da linha*/
+    text-shadow: 1px 1px 1px #111111;
+}
+
+body {
+    background-color: beige;
+}
+
+header {
+    background-color: green;
+    height: 100px;
+    padding: 20px;
+}
+
+
+/*Sempre que usar o float: left ou right, deve usar na declaração seguinte o clear:both*/
+
+footer {
+    clear: both;
+    /*Limpa a propriedade de cima*/
+    background-color: green;
+    height: 50px;
+    text-align: center;
+    /*Faz com que um texto fique centralizado*/
+    padding: 10px;
+}
+
+h1 {
+    color: brown;
+    text-align: center;
+    margin: 0 0 20px 0;
+    text-shadow: 1px 1px 1px #111111;
+    /*Da um efeito de sombra nos textos*/
+}
+
+
+/*O asterisco representa toda a página*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif
+}
+
+
+/*DIVS*/
+
+#div_principal {
+    clear: both;
+    min-height: 500px;
+    background-image: url("Imagem/jon-snow.png");
+    /*Permite colocar uma imagem no fundo de uma div*/
+    background-size: 100%;
+    /*Permite mexer com o tamanho da imagem colocada em uma div*/
+    padding: 80px 0 0 0;
+}
+
+#div_logo {
+    float: left;
+}
+
+#div_menu {
+    margin-top: 40px;
+    /*Faz com que apenas mude a altura referente a parte de cima da tela*/
+    float: right;
+}
+
+
+/*Muda os argumentos de apenas a teg <a> que a div_menu usa*/
+
+#div_menu a {
+    color: black;
+    text-decoration: none;
+    /*Tira o sublinhado do texto*/
+    text-shadow: 1px 1px 1px #111111;
+    padding: 15px;
+}
+
+
+/*Isso faz com que a teg que esta com o hover mude de cor ao passar o mause em cima*/
+
+#div_menu a:hover {
+    background-color: black;
+    color: green;
+}
+
+#div_direita {
+    background-color: brown;
+    min-height: 500px;
+    /*Esse tipo de atributo faz com que o tamanho aumente a medida que são inseridos novos textos*/
+    /*float: right;
+    Força que a div fique a direita*/
+}
+
+#div_esquerda {
+    background-color: aqua;
+    min-height: 200px;
+    width: 60%;
+    float: left;
+    /*Força que a div fique a esquerda*/
+}
+
+
+/*CLASS*/
+
+.conteiner {
+    width: 960px;
+    margin: auto;
+    /*Deixa o conteudo responsivo para diferentes tamanhos de telas*/
+}
+
+.efeito {
+    background-color: rgba(0, 0, 0, 0.3);
+    /*Da um efeito de sombra no background*/
+    padding: 100px 0 100px 0;
+}
